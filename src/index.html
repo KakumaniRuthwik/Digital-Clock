@@ -11,26 +11,44 @@
     <main>
         <section class="w-screen h-screen overflow-hidden">
             <div class="flex justify-center items-center relative w-full h-full ">
-                <div class="flex justify-center items-center size-[40vw] shadow-2xl shadow-sky-300 rounded-full">
-                    <div class="flex justify-center items-center size-[30vw] shadow-2xl shadow-sky-200 rounded-full">
-                        <div class="flex justify-center items-center size-[20vw] shadow-2xl shadow-sky-100 rounded-full">
-                            <div class="flex justify-center items-center">
-                                <div class="flex justify-center items-center text-center text-[2.25vw]">
-                                    <div class="flex justify-center items-center">
-                                        <p class="Hours">00</p>
-                                        <span class="colon px-2 pb-2"> : </span>
+                <div class="flex relative justify-center items-center size-[40vw] shadow-2xl shadow-sky-400 rotate-x-180 rounded-full">
+                    <div class="flex justify-center items-center size-[30vw] shadow-2xl shadow-sky-300  rounded-full">
+                        <div class="flex justify-center items-center size-[20vw] shadow-2xl   rounded-full timeCircle">
+                            <div class="flex flex-col justify-center items-center rotate-x-180">
+                                <div class="flex justify-center items-center text-[2.25vw]">
+                                    <div class="flex flex-col justify-center items-center">
+                                        <p class="Hours">0</p>
+                                        <span class="text-[1vw] text-sky-400">H</span>
                                     </div>
-                                    <div class="flex justify-center items-center">
-                                        <p class="Minutes">00</p>
-                                        <span class="colon px-2 pb-2"> : </span>
+                                
+                                    <span class="px-2 text-[2.25vw] flex items-center -mt-8 colon">:</span>
+                                
+                                    <div class="flex flex-col justify-center items-center">
+                                        <p class="Minutes">0</p>
+                                        <span class="text-[1vw] text-amber-400">M</span>
                                     </div>
-                                    <div class="flex justify-center items-center">
-                                        <p class="Seconds">00</p>
+                                
+                                    <span class="px-2 text-[2.25vw] flex items-center -mt-8 colon">:</span>
+                                
+                                    <div class="flex flex-col justify-center items-center">
+                                        <p class="Seconds">0</p>
+                                        <span class="hms text-[1vw] text-red-400">S</span>
+                                    </div>
+                                
+                                    <div class="flex justify-center items-center text-[2vw] pl-3">
+                                        <p class="timeStamp text-sky-500 drop-shadow-xl duration-30 -mt-6">AM</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                    <div class="absolute top-4 size-10">
+                        <button class="dark">
+                            <img src="./Images/cutmoon.svg" alt="" class="moon rotate-100 scale-110 rounded-full cursor-pointer shadow-sm shadow-sky-300">
+                        </button>
+                    </div5
+
                 </div>
             </div>
         </section>
